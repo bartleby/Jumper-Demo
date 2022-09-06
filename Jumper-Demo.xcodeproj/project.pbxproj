@@ -9,21 +9,94 @@
 /* Begin PBXBuildFile section */
 		F425BB5828C3483F0047F821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB5728C3483F0047F821 /* AppDelegate.swift */; };
 		F425BB5A28C3483F0047F821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB5928C3483F0047F821 /* SceneDelegate.swift */; };
-		F425BB5C28C3483F0047F821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB5B28C3483F0047F821 /* ViewController.swift */; };
-		F425BB5F28C3483F0047F821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F425BB5D28C3483F0047F821 /* Main.storyboard */; };
 		F425BB6128C348410047F821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F425BB6028C348410047F821 /* Assets.xcassets */; };
 		F425BB6428C348410047F821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F425BB6228C348410047F821 /* LaunchScreen.storyboard */; };
+		F425BB7028C349D90047F821 /* Container in Frameworks */ = {isa = PBXBuildFile; productRef = F425BB6F28C349D90047F821 /* Container */; };
+		F425BB7428C34BFA0047F821 /* DependencyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7328C34BFA0047F821 /* DependencyConfig.swift */; };
+		F425BB9828C34D270047F821 /* AppConfigServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7728C34D270047F821 /* AppConfigServiceType.swift */; };
+		F425BB9928C34D270047F821 /* AppConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7828C34D270047F821 /* AppConfigService.swift */; };
+		F425BB9C28C34D270047F821 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7D28C34D270047F821 /* OnboardingCoordinator.swift */; };
+		F425BB9D28C34D270047F821 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7E28C34D270047F821 /* AppCoordinator.swift */; };
+		F425BB9E28C34D270047F821 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB7F28C34D270047F821 /* TabBarCoordinator.swift */; };
+		F425BB9F28C34D270047F821 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8028C34D270047F821 /* SettingsCoordinator.swift */; };
+		F425BBA028C34D270047F821 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8128C34D270047F821 /* MainCoordinator.swift */; };
+		F425BBA128C34D270047F821 /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8228C34D270047F821 /* AuthorizationCoordinator.swift */; };
+		F425BBA228C34D270047F821 /* SettingsScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8528C34D270047F821 /* SettingsScreenBuilder.swift */; };
+		F425BBA328C34D270047F821 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8628C34D270047F821 /* SettingsViewModel.swift */; };
+		F425BBA428C34D270047F821 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8728C34D270047F821 /* SettingsViewController.swift */; };
+		F425BBA528C34D270047F821 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8928C34D270047F821 /* RegistrationViewModel.swift */; };
+		F425BBA628C34D270047F821 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8A28C34D270047F821 /* RegistrationViewController.swift */; };
+		F425BBA728C34D270047F821 /* RegistrationScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8B28C34D270047F821 /* RegistrationScreenBuilder.swift */; };
+		F425BBA828C34D270047F821 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8D28C34D270047F821 /* AuthorizationViewController.swift */; };
+		F425BBA928C34D270047F821 /* AuthorizationScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8E28C34D270047F821 /* AuthorizationScreenBuilder.swift */; };
+		F425BBAA28C34D270047F821 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB8F28C34D270047F821 /* AuthorizationViewModel.swift */; };
+		F425BBAB28C34D270047F821 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9128C34D270047F821 /* MainViewController.swift */; };
+		F425BBAC28C34D270047F821 /* MainScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9228C34D270047F821 /* MainScreenBuilder.swift */; };
+		F425BBAD28C34D270047F821 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9328C34D270047F821 /* MainViewModel.swift */; };
+		F425BBAE28C34D270047F821 /* OnboardingScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9528C34D270047F821 /* OnboardingScreenBuilder.swift */; };
+		F425BBAF28C34D270047F821 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9628C34D270047F821 /* OnboardingViewController.swift */; };
+		F425BBB028C34D270047F821 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BB9728C34D270047F821 /* OnboardingViewModel.swift */; };
+		F425BBB928C351810047F821 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBB828C351810047F821 /* Screen.swift */; };
+		F425BBBC28C352AC0047F821 /* Jumper in Frameworks */ = {isa = PBXBuildFile; productRef = F425BBBB28C352AC0047F821 /* Jumper */; };
+		F425BBC028C355E20047F821 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBBF28C355E20047F821 /* UIViewController+Extensions.swift */; };
+		F425BBC228C3A8170047F821 /* UITabBarItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBC128C3A8170047F821 /* UITabBarItem+Extensions.swift */; };
+		F425BBC428C3A8DB0047F821 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBC328C3A8DB0047F821 /* UIView+Layout.swift */; };
+		F425BBC628C457A30047F821 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBC528C457A20047F821 /* LaunchCoordinator.swift */; };
+		F425BBC928C47C210047F821 /* AuthorizationViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBC828C47C210047F821 /* AuthorizationViewController+View.swift */; };
+		F425BBCB28C4A1870047F821 /* AlertCoordinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBCA28C4A1870047F821 /* AlertCoordinable.swift */; };
+		F425BBCE28C4A9140047F821 /* RegistrationViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBCD28C4A9140047F821 /* RegistrationViewController+View.swift */; };
+		F425BBD228C4BFE20047F821 /* MainViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBD128C4BFE20047F821 /* MainViewController+View.swift */; };
+		F425BBD528C4CD7C0047F821 /* Settings+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425BBD428C4CD7C0047F821 /* Settings+View.swift */; };
+		F43F73DD28C6FA7400134C12 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73DC28C6FA7400134C12 /* DeepLink.swift */; };
+		F43F73DF28C6FABB00134C12 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73DE28C6FABB00134C12 /* Array+Safe.swift */; };
+		F43F73E228C6FCD400134C12 /* TodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73E128C6FCD400134C12 /* TodoScreen.swift */; };
+		F43F73E528C737D900134C12 /* Jumper in Frameworks */ = {isa = PBXBuildFile; productRef = F43F73E428C737D900134C12 /* Jumper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F425BB5428C3483F0047F821 /* Jumper-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jumper-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F425BB5728C3483F0047F821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F425BB5928C3483F0047F821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F425BB5B28C3483F0047F821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F425BB5E28C3483F0047F821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F425BB6028C348410047F821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F425BB6328C348410047F821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F425BB6528C348410047F821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F425BB7328C34BFA0047F821 /* DependencyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyConfig.swift; sourceTree = "<group>"; };
+		F425BB7728C34D270047F821 /* AppConfigServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigServiceType.swift; sourceTree = "<group>"; };
+		F425BB7828C34D270047F821 /* AppConfigService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigService.swift; sourceTree = "<group>"; };
+		F425BB7D28C34D270047F821 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		F425BB7E28C34D270047F821 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F425BB7F28C34D270047F821 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F425BB8028C34D270047F821 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		F425BB8128C34D270047F821 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F425BB8228C34D270047F821 /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
+		F425BB8528C34D270047F821 /* SettingsScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreenBuilder.swift; sourceTree = "<group>"; };
+		F425BB8628C34D270047F821 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F425BB8728C34D270047F821 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F425BB8928C34D270047F821 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		F425BB8A28C34D270047F821 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F425BB8B28C34D270047F821 /* RegistrationScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationScreenBuilder.swift; sourceTree = "<group>"; };
+		F425BB8D28C34D270047F821 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		F425BB8E28C34D270047F821 /* AuthorizationScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationScreenBuilder.swift; sourceTree = "<group>"; };
+		F425BB8F28C34D270047F821 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		F425BB9128C34D270047F821 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F425BB9228C34D270047F821 /* MainScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenBuilder.swift; sourceTree = "<group>"; };
+		F425BB9328C34D270047F821 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F425BB9528C34D270047F821 /* OnboardingScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreenBuilder.swift; sourceTree = "<group>"; };
+		F425BB9628C34D270047F821 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F425BB9728C34D270047F821 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		F425BBB828C351810047F821 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		F425BBBF28C355E20047F821 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F425BBC128C3A8170047F821 /* UITabBarItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extensions.swift"; sourceTree = "<group>"; };
+		F425BBC328C3A8DB0047F821 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		F425BBC528C457A20047F821 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
+		F425BBC828C47C210047F821 /* AuthorizationViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthorizationViewController+View.swift"; sourceTree = "<group>"; };
+		F425BBCA28C4A1870047F821 /* AlertCoordinable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCoordinable.swift; sourceTree = "<group>"; };
+		F425BBCD28C4A9140047F821 /* RegistrationViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+View.swift"; sourceTree = "<group>"; };
+		F425BBD128C4BFE20047F821 /* MainViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+View.swift"; sourceTree = "<group>"; };
+		F425BBD428C4CD7C0047F821 /* Settings+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+View.swift"; sourceTree = "<group>"; };
+		F43F73DC28C6FA7400134C12 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		F43F73DE28C6FABB00134C12 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		F43F73E128C6FCD400134C12 /* TodoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F425BB7028C349D90047F821 /* Container in Frameworks */,
+				F43F73E528C737D900134C12 /* Jumper in Frameworks */,
+				F425BBBC28C352AC0047F821 /* Jumper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +118,7 @@
 			children = (
 				F425BB5628C3483F0047F821 /* Jumper-Demo */,
 				F425BB5528C3483F0047F821 /* Products */,
+				F425BBBA28C352AC0047F821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +133,209 @@
 		F425BB5628C3483F0047F821 /* Jumper-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				F425BB5728C3483F0047F821 /* AppDelegate.swift */,
-				F425BB5928C3483F0047F821 /* SceneDelegate.swift */,
-				F425BB5B28C3483F0047F821 /* ViewController.swift */,
-				F425BB5D28C3483F0047F821 /* Main.storyboard */,
+				F425BBB728C351790047F821 /* Common */,
+				F425BB6D28C349920047F821 /* App */,
+				F425BB8328C34D270047F821 /* Screens */,
+				F425BB7C28C34D270047F821 /* Coordinators */,
+				F425BB7528C34D270047F821 /* Services */,
 				F425BB6028C348410047F821 /* Assets.xcassets */,
 				F425BB6228C348410047F821 /* LaunchScreen.storyboard */,
 				F425BB6528C348410047F821 /* Info.plist */,
 			);
 			path = "Jumper-Demo";
+			sourceTree = "<group>";
+		};
+		F425BB6D28C349920047F821 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB7128C34BCA0047F821 /* Configuration */,
+				F425BB5728C3483F0047F821 /* AppDelegate.swift */,
+				F425BB5928C3483F0047F821 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F425BB7128C34BCA0047F821 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB7228C34BDB0047F821 /* Dependency */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F425BB7228C34BDB0047F821 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB7328C34BFA0047F821 /* DependencyConfig.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		F425BB7528C34D270047F821 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB7628C34D270047F821 /* AppConfigService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F425BB7628C34D270047F821 /* AppConfigService */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB7728C34D270047F821 /* AppConfigServiceType.swift */,
+				F425BB7828C34D270047F821 /* AppConfigService.swift */,
+			);
+			path = AppConfigService;
+			sourceTree = "<group>";
+		};
+		F425BB7C28C34D270047F821 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBCF28C4AA8D0047F821 /* Coordinables */,
+				F425BBC528C457A20047F821 /* LaunchCoordinator.swift */,
+				F425BB7D28C34D270047F821 /* OnboardingCoordinator.swift */,
+				F425BB8228C34D270047F821 /* AuthorizationCoordinator.swift */,
+				F425BB7E28C34D270047F821 /* AppCoordinator.swift */,
+				F425BB7F28C34D270047F821 /* TabBarCoordinator.swift */,
+				F425BB8128C34D270047F821 /* MainCoordinator.swift */,
+				F425BB8028C34D270047F821 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F425BB8328C34D270047F821 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F43F73E028C6FCC800134C12 /* Todo */,
+				F425BB9428C34D270047F821 /* Onboarding */,
+				F425BB8828C34D270047F821 /* Registration */,
+				F425BB8C28C34D270047F821 /* Authorization */,
+				F425BB9028C34D270047F821 /* Main */,
+				F425BB8428C34D270047F821 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F425BB8428C34D270047F821 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBD328C4CD720047F821 /* View */,
+				F425BB8528C34D270047F821 /* SettingsScreenBuilder.swift */,
+				F425BB8628C34D270047F821 /* SettingsViewModel.swift */,
+				F425BB8728C34D270047F821 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F425BB8828C34D270047F821 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBCC28C4A9030047F821 /* View */,
+				F425BB8928C34D270047F821 /* RegistrationViewModel.swift */,
+				F425BB8A28C34D270047F821 /* RegistrationViewController.swift */,
+				F425BB8B28C34D270047F821 /* RegistrationScreenBuilder.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		F425BB8C28C34D270047F821 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBC728C47C0D0047F821 /* View */,
+				F425BB8F28C34D270047F821 /* AuthorizationViewModel.swift */,
+				F425BB8D28C34D270047F821 /* AuthorizationViewController.swift */,
+				F425BB8E28C34D270047F821 /* AuthorizationScreenBuilder.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F425BB9028C34D270047F821 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBD028C4BFC60047F821 /* View */,
+				F425BB9228C34D270047F821 /* MainScreenBuilder.swift */,
+				F425BB9328C34D270047F821 /* MainViewModel.swift */,
+				F425BB9128C34D270047F821 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F425BB9428C34D270047F821 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F425BB9528C34D270047F821 /* OnboardingScreenBuilder.swift */,
+				F425BB9628C34D270047F821 /* OnboardingViewController.swift */,
+				F425BB9728C34D270047F821 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F425BBB728C351790047F821 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F43F73DC28C6FA7400134C12 /* DeepLink.swift */,
+				F425BBB828C351810047F821 /* Screen.swift */,
+				F425BBBF28C355E20047F821 /* UIViewController+Extensions.swift */,
+				F425BBC128C3A8170047F821 /* UITabBarItem+Extensions.swift */,
+				F425BBC328C3A8DB0047F821 /* UIView+Layout.swift */,
+				F43F73DE28C6FABB00134C12 /* Array+Safe.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F425BBBA28C352AC0047F821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F425BBC728C47C0D0047F821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBC828C47C210047F821 /* AuthorizationViewController+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F425BBCC28C4A9030047F821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBCD28C4A9140047F821 /* RegistrationViewController+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F425BBCF28C4AA8D0047F821 /* Coordinables */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBCA28C4A1870047F821 /* AlertCoordinable.swift */,
+			);
+			path = Coordinables;
+			sourceTree = "<group>";
+		};
+		F425BBD028C4BFC60047F821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBD128C4BFE20047F821 /* MainViewController+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F425BBD328C4CD720047F821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F425BBD428C4CD7C0047F821 /* Settings+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F43F73E028C6FCC800134C12 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				F43F73E128C6FCD400134C12 /* TodoScreen.swift */,
+			);
+			path = Todo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +354,11 @@
 			dependencies = (
 			);
 			name = "Jumper-Demo";
+			packageProductDependencies = (
+				F425BB6F28C349D90047F821 /* Container */,
+				F425BBBB28C352AC0047F821 /* Jumper */,
+				F43F73E428C737D900134C12 /* Jumper */,
+			);
 			productName = "Jumper-Demo";
 			productReference = F425BB5428C3483F0047F821 /* Jumper-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +387,10 @@
 				Base,
 			);
 			mainGroup = F425BB4B28C3483F0047F821;
+			packageReferences = (
+				F425BB6E28C349D90047F821 /* XCRemoteSwiftPackageReference "Container" */,
+				F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */,
+			);
 			productRefGroup = F425BB5528C3483F0047F821 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +407,6 @@
 			files = (
 				F425BB6428C348410047F821 /* LaunchScreen.storyboard in Resources */,
 				F425BB6128C348410047F821 /* Assets.xcassets in Resources */,
-				F425BB5F28C3483F0047F821 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +417,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F425BB5C28C3483F0047F821 /* ViewController.swift in Sources */,
+				F43F73DF28C6FABB00134C12 /* Array+Safe.swift in Sources */,
 				F425BB5828C3483F0047F821 /* AppDelegate.swift in Sources */,
+				F425BBAB28C34D270047F821 /* MainViewController.swift in Sources */,
+				F425BBCB28C4A1870047F821 /* AlertCoordinable.swift in Sources */,
+				F425BBA528C34D270047F821 /* RegistrationViewModel.swift in Sources */,
+				F425BBA028C34D270047F821 /* MainCoordinator.swift in Sources */,
+				F425BB7428C34BFA0047F821 /* DependencyConfig.swift in Sources */,
+				F425BBB928C351810047F821 /* Screen.swift in Sources */,
+				F425BBAD28C34D270047F821 /* MainViewModel.swift in Sources */,
+				F425BB9928C34D270047F821 /* AppConfigService.swift in Sources */,
+				F43F73DD28C6FA7400134C12 /* DeepLink.swift in Sources */,
 				F425BB5A28C3483F0047F821 /* SceneDelegate.swift in Sources */,
+				F425BBA328C34D270047F821 /* SettingsViewModel.swift in Sources */,
+				F425BBC628C457A30047F821 /* LaunchCoordinator.swift in Sources */,
+				F425BBA928C34D270047F821 /* AuthorizationScreenBuilder.swift in Sources */,
+				F425BBD528C4CD7C0047F821 /* Settings+View.swift in Sources */,
+				F425BBA828C34D270047F821 /* AuthorizationViewController.swift in Sources */,
+				F425BBD228C4BFE20047F821 /* MainViewController+View.swift in Sources */,
+				F425BBC228C3A8170047F821 /* UITabBarItem+Extensions.swift in Sources */,
+				F425BBAA28C34D270047F821 /* AuthorizationViewModel.swift in Sources */,
+				F425BBC428C3A8DB0047F821 /* UIView+Layout.swift in Sources */,
+				F425BBA428C34D270047F821 /* SettingsViewController.swift in Sources */,
+				F425BB9C28C34D270047F821 /* OnboardingCoordinator.swift in Sources */,
+				F425BBA128C34D270047F821 /* AuthorizationCoordinator.swift in Sources */,
+				F425BBAF28C34D270047F821 /* OnboardingViewController.swift in Sources */,
+				F425BBAE28C34D270047F821 /* OnboardingScreenBuilder.swift in Sources */,
+				F425BBA728C34D270047F821 /* RegistrationScreenBuilder.swift in Sources */,
+				F425BBB028C34D270047F821 /* OnboardingViewModel.swift in Sources */,
+				F425BBC928C47C210047F821 /* AuthorizationViewController+View.swift in Sources */,
+				F425BB9D28C34D270047F821 /* AppCoordinator.swift in Sources */,
+				F425BBA628C34D270047F821 /* RegistrationViewController.swift in Sources */,
+				F425BB9828C34D270047F821 /* AppConfigServiceType.swift in Sources */,
+				F425BB9F28C34D270047F821 /* SettingsCoordinator.swift in Sources */,
+				F425BBC028C355E20047F821 /* UIViewController+Extensions.swift in Sources */,
+				F43F73E228C6FCD400134C12 /* TodoScreen.swift in Sources */,
+				F425BB9E28C34D270047F821 /* TabBarCoordinator.swift in Sources */,
+				F425BBA228C34D270047F821 /* SettingsScreenBuilder.swift in Sources */,
+				F425BBCE28C4A9140047F821 /* RegistrationViewController+View.swift in Sources */,
+				F425BBAC28C34D270047F821 /* MainScreenBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F425BB5D28C3483F0047F821 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F425BB5E28C3483F0047F821 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F425BB6228C348410047F821 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +599,6 @@
 				INFOPLIST_FILE = "Jumper-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +626,6 @@
 				INFOPLIST_FILE = "Jumper-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +663,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F425BB6E28C349D90047F821 /* XCRemoteSwiftPackageReference "Container" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bartleby/Container.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bartleby/Jumper";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F425BB6F28C349D90047F821 /* Container */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F425BB6E28C349D90047F821 /* XCRemoteSwiftPackageReference "Container" */;
+			productName = Container;
+		};
+		F425BBBB28C352AC0047F821 /* Jumper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Jumper;
+		};
+		F43F73E428C737D900134C12 /* Jumper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */;
+			productName = Jumper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F425BB4C28C3483F0047F821 /* Project object */;
 }

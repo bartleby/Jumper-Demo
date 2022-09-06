@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "container",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bartleby/Container.git",
+      "state" : {
+        "revision" : "f64d7133461c81b287ae824a7f5cee6c4c9e1178",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "jumper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bartleby/Jumper",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cd69e61ddde908965b253b7f6c09c7068e8b325d"
+      }
+    }
+  ],
+  "version" : 2
+}
