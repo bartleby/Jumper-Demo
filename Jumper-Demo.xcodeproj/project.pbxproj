@@ -50,7 +50,7 @@
 		F43F73DD28C6FA7400134C12 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73DC28C6FA7400134C12 /* DeepLink.swift */; };
 		F43F73DF28C6FABB00134C12 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73DE28C6FABB00134C12 /* Array+Safe.swift */; };
 		F43F73E228C6FCD400134C12 /* TodoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F73E128C6FCD400134C12 /* TodoScreen.swift */; };
-		F43F73E528C737D900134C12 /* Jumper in Frameworks */ = {isa = PBXBuildFile; productRef = F43F73E428C737D900134C12 /* Jumper */; };
+		F43F73E828C73C0000134C12 /* Jumper in Frameworks */ = {isa = PBXBuildFile; productRef = F43F73E728C73C0000134C12 /* Jumper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F425BB7028C349D90047F821 /* Container in Frameworks */,
-				F43F73E528C737D900134C12 /* Jumper in Frameworks */,
+				F43F73E828C73C0000134C12 /* Jumper in Frameworks */,
 				F425BBBC28C352AC0047F821 /* Jumper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +357,7 @@
 			packageProductDependencies = (
 				F425BB6F28C349D90047F821 /* Container */,
 				F425BBBB28C352AC0047F821 /* Jumper */,
-				F43F73E428C737D900134C12 /* Jumper */,
+				F43F73E728C73C0000134C12 /* Jumper */,
 			);
 			productName = "Jumper-Demo";
 			productReference = F425BB5428C3483F0047F821 /* Jumper-Demo.app */;
@@ -389,7 +389,7 @@
 			mainGroup = F425BB4B28C3483F0047F821;
 			packageReferences = (
 				F425BB6E28C349D90047F821 /* XCRemoteSwiftPackageReference "Container" */,
-				F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */,
+				F43F73E628C73C0000134C12 /* XCRemoteSwiftPackageReference "Jumper" */,
 			);
 			productRefGroup = F425BB5528C3483F0047F821 /* Products */;
 			projectDirPath = "";
@@ -673,12 +673,12 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */ = {
+		F43F73E628C73C0000134C12 /* XCRemoteSwiftPackageReference "Jumper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bartleby/Jumper";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -693,9 +693,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Jumper;
 		};
-		F43F73E428C737D900134C12 /* Jumper */ = {
+		F43F73E728C73C0000134C12 /* Jumper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F43F73E328C737D900134C12 /* XCRemoteSwiftPackageReference "Jumper" */;
+			package = F43F73E628C73C0000134C12 /* XCRemoteSwiftPackageReference "Jumper" */;
 			productName = Jumper;
 		};
 /* End XCSwiftPackageProductDependency section */
